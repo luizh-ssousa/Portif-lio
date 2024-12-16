@@ -1,0 +1,462 @@
+.pt-serif-regular {
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .pt-serif-bold {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .pt-serif-regular-italic {
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .pt-serif-bold-italic {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+
+body {
+    font-family: "PT Serif", serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #aaa9a9;
+    border-bottom: 1px solid #0704be;
+}
+
+.perfil {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.perfil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 100px;
+}
+
+.botao {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 1s ease;
+    font-size: 16px;
+}
+
+.botao:hover {
+    color: #00043d;
+}
+
+video {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.texto-centralizado {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    padding: 20px;
+}
+
+.titulo {
+    font-size: 80px;
+    font-style: italic;
+    color: #fff;
+    margin-left: 100px;
+    margin-top: 120px;
+    margin-bottom: 0px;
+}
+
+.subtitulo {
+    font-size: 60px;
+    color: #fff;
+    margin-left: 100px;
+    margin-top: 0;
+}
+
+.projetos {
+    background-color: #000;
+    color: #fff;
+    padding: 50px;
+    margin-top: -10px;
+}
+
+.projetos ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.projetos li {
+    margin-bottom: 10px;
+}
+
+.titulo-projetos {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+.previa-projeto {
+    width: 400px;
+    height: auto;
+    border: 1px solid #ddd;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.previa-projeto:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.imagem-descrição-mario {
+    display: flex;
+    align-items: center;
+}
+
+.descrição-mario {
+    margin-bottom: 100px;
+    padding-left: 70px;
+    padding-right: 50px;
+}
+
+.imagem-descrição-nikel {
+    display: flex;
+    align-items: center;
+}
+
+.descrição-nikel {
+    margin-bottom: 90px;
+    padding-left: 70px;
+    padding-right: 50px;
+}
+
+.capacitações {
+    text-align: center;
+    color: #fff;
+
+}
+
+.titulo-capacitações {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 90px;
+    margin-top: 90px;
+}
+
+.subtitulo-capacitações h2 {
+    font-size: 1.5em;
+    text-align: left;
+    margin-left: 200px;
+
+}
+
+.tecnologias {
+    background-color: rgb(73, 73, 73);
+    padding: 30px;
+    border-radius: 8px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 100px;
+    color: white;
+    background: linear-gradient(to bottom, #292929, #5c5b5b, #292929);
+}
+
+.barra {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.barra span {
+    width: 100px;
+    text-align: center;
+}
+
+.preenchimento {
+    height: 20px;
+    background-color: rgb(0, 255, 0);
+    border-radius: 5px;
+    margin-left: 10px;
+    width: 0;
+    transition: width 2s ease-out;
+}
+
+.capacitações {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.capacitações img {
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.capacitações h1,
+.capacitações .subtitulo-capacitações,
+.capacitações .tecnologias {
+    position: relative;
+    z-index: 1;
+}
+
+.capacitações::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.fale-comigo {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.titulo-falecomigo {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.contatos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.contato-item {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.contato-item:hover {
+    color: #0056b3;
+}
+
+.contato-item i {
+    font-size: 24px;
+    margin-right: 10px;
+    width: 30px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .contato-item {
+        font-size: 16px;
+    }
+
+    .contato-item i {
+        font-size: 20px;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.heart {
+    color: #ff0000;
+    font-size: 18px;
+    animation: heartbeat 1s infinite;
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #0056b3;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .texto-centralizado {
+        padding: 10px;
+        margin-top: -100px;
+    }
+
+    .titulo {
+        font-size: 60px;
+        margin-left: 50px;
+    }
+
+    .subtitulo {
+        font-size: 40px;
+        margin-left: 50px;
+    }
+
+    .projetos, .capacitações, .fale-comigo {
+        padding: 30px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    .titulo {
+        font-size: 50px;
+        margin-left: 20px;
+    }
+
+    .subtitulo {
+        font-size: 30px;
+        margin-left: 20px;
+    }
+
+    .imagem-descrição-mario, .imagem-descrição-nikel {
+        flex-direction: column;
+    }
+
+    .descrição-mario, .descrição-nikel {
+        padding: 20px;
+    }
+
+    .tecnologias {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .perfil {
+        width: 40px;
+        height: 40px;
+    }
+
+    .botao {
+        font-size: 14px;
+    }
+
+    .titulo {
+        font-size: 40px;
+        margin-left: 10px;
+    }
+
+    .subtitulo {
+        font-size: 24px;
+        margin-left: 10px;
+    }
+
+    .previa-projeto {
+        width: 100%;
+        height: auto;
+    }
+
+    .tecnologias {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .barra span {
+        font-size: 12px;
+    }
+
+    .contato-item {
+        font-size: 14px;
+    }
+}
